@@ -1,10 +1,11 @@
+//if문의 예제
 import java.util.*;
 
-public class Ex4_4 {
-
+public class Ex4_4 {  
+		
 	public static void main(String[] args) {
 		int score=0;
-		char grade=' ';
+		char grade=' ';//등급을 매기는 변수인데 공백으로 초기화한다.
 		
 		System.out.println("점수를 입력하세요.>");
 		
@@ -17,7 +18,7 @@ public class Ex4_4 {
 		    grade='B';
 		}else if(score >= 70) {
 			grade= 'C';
-		}else {
+		}else {   //else는 false일때 실행되는 구간이다.
 			grade='D';
 		}
 		
