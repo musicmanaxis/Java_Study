@@ -11,7 +11,7 @@ public class Ex4_6 {
 		month=scan.nextInt();
 		if( month ==0  || 13 < month) {
 			System.out.println("Not Calendar, Try it Argin! Correct Write Month");
-			
+			 
 		}else { 
 			switch (month){
 				case 3 :   //case 문을 이렇게 세로로 쓸수도 있다  
