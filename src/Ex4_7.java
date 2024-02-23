@@ -1,9 +1,10 @@
-
+//Math.random()  사용하기  
+//Math.random()의 범위는  -> 0.0 <= x <10.0 이고 반환형은 double값이다. 
 public class Ex4_7 {
 
 	public static void main(String[] args) {
 		//Quiz-1) 1이상 10이하 사이의 난수를 20번 출력하시오.
-		//Math.random()의 범위는  -> 0.0 <= x <10.0 이고 반환형은 double값이다. 
+		
 		
 		System.out.print(Math.random());
 		System.out.println();
