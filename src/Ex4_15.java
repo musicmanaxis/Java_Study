@@ -7,7 +7,7 @@ public class Ex4_15 {
 		int input=0;
 		
 		Scanner scan=new Scanner(System.in);
-		answer=(int)(Math.random()*100+1);
+		answer=(int)(Math.random()*100+1);  // 0이상 100이하 범위의 랜덤 값처리  
 		
 		System.out.println(answer);
 		
@@ -21,19 +21,13 @@ public class Ex4_15 {
 				System.out.println("더 큰값을 입력하세요 ");
 			}
 			
-		}while(input !=answer);{   //do 문장에서 마지막 while();  세미콜론을 적어야 한다.
-			System.out.println("정답 ");
-		}
+		}while(input !=answer);   
+		//do 문장에서 마지막 while();  세미콜론을 적어야 한다.
+		//while(); 문에서는 블럭이 없다. 조건식만 써준다. 
+		//위의 것은 정답이 아니면 다시 do블럭을 수행하라는 의미 
 		
-//		for(int i=0; i< 100;i++) {
-//			answer=(int)(Math.random()*100+1);   0이상 100이하 범위의 랜덤 값처리  
-//			System.out.printf("%d,", answer);
-//			if(answer==100) {
-//				System.out.println();
-//				System.out.printf("value is 100");
-//				System.out.println();
-//			}
-//		}
+		System.out.println("정답 ");
+		
 		
 
 	}
