@@ -15,14 +15,7 @@ public class Ex5_4 {
 			}
 			System.out.println(Arrays.toString(Arr));
 			
-			
-			      
-					for(int i=0 ; i<100 ;i++) {
-						int r=(int)(Math.random()*10);
-						if(r==9)
-						System.out.print(r);
-						break;
-					}
+					   
 	}
 
 }
