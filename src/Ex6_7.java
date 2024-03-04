@@ -17,7 +17,7 @@ public class Ex6_7 {
 		
 	}
 
-	static void change(Data2 d) {  //매개변수 타입을 참조형으로 하였다.
+	static void change(Data2 d) {  //매개변수 타입을 참조형으로 하였다. 
 		d.x=1000;
 		System.out.println("change() :x ="+d.x);
 	}
