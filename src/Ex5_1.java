@@ -1,5 +1,6 @@
 //배열  
 import java.util.*;  //ctrl+shift+o 를 누르면 자동으로 import 문이 생성된다.
+
 public class Ex5_1 {
 
 	public static void main(String[] args) {
