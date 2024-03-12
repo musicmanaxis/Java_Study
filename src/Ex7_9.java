@@ -13,23 +13,21 @@ class Buyer1{
 			 System.out.println("There is no money");
 			 return;
 		 }
-		cart[i++]=p;
+		cart[i++]=p;   //장바구니에 물건 담기  
 		System.out.println(p+"를 구매하셧습니다. ");		
 		money -= p.price;
 		bonusPoint += (int)(p.price/10.0) ;
 		
-		
-		
 	}
 	
-		void summary() {
+		void summary() {   // 자기가 산 물건 목록보기  
 		int sum=0;
 		String item="";
 		
 		for(int i=0; i<cart.length ;i++) {
 			if(cart[i]==null) break;
-			sum += cart[i].price;
-			item += cart[i]+", ";
+			sum += cart[i].price; //합계 내기  
+			item += cart[i]+", ";  //장바구니 목록보기..
 			
 		}
 		
