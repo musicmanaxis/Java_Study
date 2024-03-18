@@ -1,7 +1,7 @@
 //equals()를 오버라이딩하면 hashCode()도 오버라이딩 해줘야 한다.
 //위의 두메서드는 객체의 주소값을 이용하는데, equals()에서 객체의 변수값을 이용하며 두 객체가 갔다고 표현했다면
-// 주소값을 이용하는 hashCode()도 같다고 표현해야 말이 맞다..그리고 이런2가지의 오버라이딩은 규칙이다..
-//hashCode()는 객체의 주소값을m int로  반환한다.  
+// 주소값을 이용하는 hashCode()도 같다고 표현해야 말이 맞다..그리고 이런2가지 오버라이딩을 해줘야 하는것은  규칙이다..
+//hashCode()는 객체의 주소값을 int로  반환한다.  
 
 
 import java.util.Objects;
@@ -19,9 +19,9 @@ class Card{
 		this.num=num;
 	}
 	
-	public String toString() {   // 객체의 변수를 이용해서 표현하여 오버라이딩 하면된다.  
+	public String toString() {   // toString()은 객체의 변수를 이용해서 표현하여 오버라이딩 하면된다.  
 		return "kind:"+this.kind+", num:"+this.num;
-	}
+	} //toString()을 오버라이딩하지 않고 쓰면 객체의 클래스이름@객체주소 등과 같이 표현되서 쓸모있게 쓸라고..오버라이딩 
 	
 	public int hashCode() {   //equals()를 오버라이딩하면 hashCode()해줘야 한다..규칙임  
 		return Objects.hash(kind, num);  //hash()안의 매개변수를 가변인자다..정해진 갯수가 없다..맘데로 
